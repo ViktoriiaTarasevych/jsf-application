@@ -8,28 +8,24 @@
       xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-    <title>Demo application</title>
+    <title>Личные данные</title>
 </h:head>
 
 <h:body>
     <h:form id="form1">
         <h:panelGrid>
+            <h:outputLabel id="nameLabe1" value="Введите:"/>
+            <br/>
+            <h:outputLabel id="nameLabe2" value="Имя"/>
             <p:inputText value="#{homeController.name}"/>
+            <h:outputLabel id="nameLabe3" value="Фамилия"/>
             <p:inputText value="#{homeController.surname}"/>
-            <p:commandButton value="Say Hello" action="#{homeController.sayHello1()}"/>
+            <h:outputLabel id="nameLabe4" value="Год рождения"/>
+            <p:inputText value="#{homeController.yearBirthday}"/>
+            <h:outputLabel id="nameLabe5" value="Номер паспорта"/>
+            <p:inputText value="#{homeController.numberPassport}"/>
+            <p:commandButton value="Далее" action="#{homeController.sayHello1()}"/>
         </h:panelGrid>
     </h:form>
-
-    <br/>
-
-    <h:form id="form2">
-        <h:panelGrid>
-            <p:inputText value="#{homeController.name}"/>
-            <p:inputText value="#{homeController.surname}"/>
-            <p:commandButton value="Say Hello" action="#{homeController.sayHello2()}" update="nameLabel"/>
-        </h:panelGrid>
-    </h:form>
-
-    <h:outputLabel id="nameLabel" value="Hello #{homeController.name}"/>
 </h:body>
 </html>
