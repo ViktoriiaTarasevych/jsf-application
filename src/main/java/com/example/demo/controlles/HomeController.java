@@ -6,12 +6,54 @@ import javax.inject.Named;
 public class HomeController {
 
     private String name;
-
     private String surname;
-
     private String yearBirthday;
-
     private String numberPassport;
+    private String country;
+    private String city;
+    private String countPeople;
+    private String periodOfResidenceBegin;
+    private String periodOfResidenceEnd;
+
+    public String getPeriodOfResidenceBegin() {
+        return periodOfResidenceBegin;
+    }
+
+    public void setPeriodOfResidenceBegin(String periodOfResidenceBegin) {
+        this.periodOfResidenceBegin = periodOfResidenceBegin;
+    }
+
+    public String getPeriodOfResidenceEnd() {
+        return periodOfResidenceEnd;
+    }
+
+    public void setPeriodOfResidenceEnd(String periodOfResidenceEnd) {
+        this.periodOfResidenceEnd = periodOfResidenceEnd;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCountPeople() {
+        return countPeople;
+    }
+
+    public void setCountPeople(String countPeople) {
+        this.countPeople = countPeople;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
     public String getNumberPassport() {
         return numberPassport;
@@ -46,7 +88,7 @@ public class HomeController {
     }
 
     public String sayHello1() {
-        return "hello.xhtml?faces-redirect=true&name=" + name;
+        return "dataForHotel.xhtml?faces-redirect=true&name=" + name;
     }
 
     public String sayHello3() {

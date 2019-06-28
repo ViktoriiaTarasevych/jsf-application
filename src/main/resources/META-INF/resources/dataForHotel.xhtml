@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Данные для бронирования</title>
+</h:head>
+
+<h:body>
+    <h:form id="form1">
+        <h:panelGrid>
+            <h:outputLabel id="nameLabe1" value="Для поиска отеля напишите:"/>
+            <br/>
+            <h:outputLabel id="nameLabe2" value="Страна"/>
+            <p:inputText value="#{homeController.country}"/>
+            <h:outputLabel id="nameLabe3" value="Город"/>
+            <p:inputText value="#{homeController.city}"/>
+            <h:outputLabel id="nameLabe4" value="Количество людей"/>
+            <p:inputText value="#{homeController.countPeople}"/>
+            <h:outputLabel id="nameLabe5" value="Период проживания"/>
+            <br/>
+            <h:outputLabel id="nameLabe6" value="От"/>
+            <p:inputText value="#{homeController.periodOfResidenceBegin}"/>
+            <h:outputLabel id="nameLabe7" value="До"/>
+            <p:inputText value="#{homeController.periodOfResidenceEnd}"/>
+            <p:commandButton value="Далее" action="#{homeController.sayHello1()}"/>
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>
