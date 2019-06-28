@@ -46,11 +46,11 @@ public class HomeController {
     }
 
     public String sayHello1() {
-        System.out.println("Hello2 " + name + " " + surname);
         return "hello.xhtml?faces-redirect=true&name=" + name;
     }
 
-    public void sayHello2() {
-        System.out.println("Hello1 " + name + " " + surname);
+    public String sayHello3() {
+        return "personalData.xhtml?faces-redirect=true&name=" + name;
     }
+
 }
