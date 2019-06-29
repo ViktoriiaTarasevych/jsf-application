@@ -88,11 +88,14 @@ public class HomeController {
     }
 
     public String sayHello1() {
-        return "dataForHotel.xhtml?faces-redirect=true&name=" + name;
+        return "dataForHotel.xhtml?faces-redirect=true&name=";
     }
 
     public String sayHello3() {
-        return "personalData.xhtml?faces-redirect=true&name=" + name;
+        return "personalData.xhtml?faces-redirect=true&name=";
     }
 
+    public String sayHello4() {
+        return "control.xhtml?faces-redirect=true&name=";
+    }
 }
