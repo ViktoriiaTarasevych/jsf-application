@@ -14,8 +14,10 @@
 <h:body>
     <h:form id="form1">
         <h:panelGrid>
-            <h:outputLabel id="nameLabe1" value="Добро пожаловать!"/>
-            <br/>
+            <div class="ui-g">
+                <div class="ui-g-6"></div>
+                <div class="ui-grid-col-6">Добро_пожаловать!</div>
+            </div>
             <h:outputLabel id="nameLabe2" value="Нажмите далее для бронирования отеля"/>
             <p:commandButton value="Далее" action="#{homeController.moveToQuestionAboutPersonalData()}"/>
         </h:panelGrid>
